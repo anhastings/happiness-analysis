@@ -1,21 +1,29 @@
-# World Happiness Analysis
+# World Happiness Analysis (2019)
 
-This project explores the World Happiness Report dataset to identify patterns and insights related to happiness scores across countries.
+This project analyzes the World Happiness Report dataset to explore patterns and insights related to happiness scores across countries.
 
-## Objectives
-- Analyze key factors influencing happiness
-- Practice data cleaning and exploratory analysis
-- Visualize trends using Python
+## Project Goals
+- Analyze key factors influencing happiness scores
+- Perform data cleaning and exploratory data analysis (EDA)
+- Create visualizations to communicate insights
 
-## Tools Used
+## Tools & Technologies
 - Python
 - Pandas
-- Matplotlib / Seaborn
+- Matplotlib & Seaborn
 - Jupyter Notebook
 
 ## Dataset
-World Happiness Report (2019)
+- **World Happiness Report (2019)**
+- CSV format, includes country, region, happiness score, and key factors
 
-## Status
-Initial analysis in progress
+## Key Insights (example)
+- Higher GDP per capita and social support are strongly correlated with higher happiness scores
+- Generosity and healthy life expectancy also show positive trends
+
+## How to Run
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/anhastings/happiness-analysis.git
+
 

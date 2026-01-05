@@ -1,38 +1,46 @@
 # World Happiness Analysis (2019)
 
-This project analyzes the World Happiness Report dataset to explore patterns and insights related to happiness scores across countries.
+This project analyzes the **World Happiness Report (2019)** and visualizes the top 10 happiest countries.
 
-## Project Goals
-- Analyze key factors influencing happiness scores
-- Perform data cleaning and exploratory data analysis (EDA)
-- Create visualizations to communicate insights
+---
 
-## Tools & Technologies
-- Python
-- Pandas
-- Matplotlib & Seaborn
-- Jupyter Notebook
+## Overview
+
+- **Language:** Python  
+- **Libraries:** Pandas, Matplotlib, Seaborn  
+- **Environment:** Jupyter Notebook / Python scripts  
+
+The goal is to explore happiness scores by country and provide simple visual insights.
+
+---
 
 ## Dataset
-- **World Happiness Report (2019)**
-- CSV format, includes country, region, happiness score, and key factors
 
-## Key Insights (example)
-- Higher GDP per capita and social support are strongly correlated with higher happiness scores
-- Generosity and healthy life expectancy also show positive trends
+The dataset used is from the [World Happiness Report 2019](https://worldhappiness.report/ed/2019/) and includes the following columns:
 
-## How to Run
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/anhastings/happiness-analysis.git
+- `Overall rank`  
+- `Country or region`  
+- `Score`  
+- `GDP per capita`  
+- `Social support`  
+- `Healthy life expectancy`  
+- `Freedom to make life choices`  
+- `Generosity`  
+- `Perceptions of corruption`  
+
+The data is stored in `data/world_happiness_2019.csv`.
+
+---
 
 ## Example Plot
 
-Here is a plot of the Top 10 Happiest Countries in 2019:
+Here is a plot of the **Top 10 Happiest Countries in 2019**:
 
 ![Top 10 Happiest Countries](reports/top10_happiest.png)
 
-This simple example shows the top 10 happiest countries in 2019:
+---
+
+## Example Code
 
 ```python
 import pandas as pd
@@ -50,5 +58,8 @@ plt.barh(top10['Country or region'], top10['Score'], color='skyblue')
 plt.xlabel("Happiness Score")
 plt.title("Top 10 Happiest Countries in 2019")
 plt.gca().invert_yaxis()
+
+# Show plot
 plt.show()
+
 

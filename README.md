@@ -28,6 +28,10 @@ This project analyzes the World Happiness Report dataset to explore patterns and
 
 ## Example Plot
 
+Here is a plot of the Top 10 Happiest Countries in 2019:
+
+![Top 10 Happiest Countries](reports/top10_happiest.png)
+
 This simple example shows the top 10 happiest countries in 2019:
 
 ```python
@@ -42,7 +46,7 @@ top10 = df.sort_values(by="Score", ascending=False).head(10)
 
 # Plot
 plt.figure(figsize=(10,6))
-plt.barh(top10['Country'], top10['Score'], color='skyblue')
+plt.barh(top10['Country or region'], top10['Score'], color='skyblue')
 plt.xlabel("Happiness Score")
 plt.title("Top 10 Happiest Countries in 2019")
 plt.gca().invert_yaxis()
